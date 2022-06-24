@@ -27,8 +27,21 @@ img {
   color: white;
 }
 
+.myMessage .left .message-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 0.25rem;
+  background: #212121;
+}
+
 .myMessage .left .time {
   font-size: 12px;
   margin-left: 8px;
   color: #444;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.myMessage .left .time p {
+  cursor: pointer;
 }

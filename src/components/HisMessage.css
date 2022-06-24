@@ -28,4 +28,10 @@ img {
   font-size: 12px;
   margin-left: 8px;
   color: #444;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hisMessage .left .time p {
+  cursor: pointer;
 }

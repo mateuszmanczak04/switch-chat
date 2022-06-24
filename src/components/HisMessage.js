@@ -14,7 +14,9 @@ const HisMessage = ({ sender, content, time }) => {
           </p>
           <p>{content}</p>
         </div>
-        <p className='time'>{time} | edit | delete</p>
+        <div className='time'>
+          <p>{time}</p>
+        </div>
       </div>
     </div>
   );

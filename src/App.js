@@ -8,21 +8,25 @@ const initialMessages = [
     sender: 'John',
     content: 'Hello, how are you?',
     time: '6:35',
+    id: 1,
   },
   {
     sender: 'Krystian',
     content: "I'm good, thanks! How about you?",
     time: '6:35',
+    id: 2,
   },
   {
     sender: 'John',
     content: 'Pretty good! What would you like to learn today',
     time: '6:35',
+    id: 3,
   },
   {
     sender: 'Krystian',
     content: 'Well, maybe business English? What do you think?',
     time: '6:35',
+    id: 4,
   },
 ];
 
@@ -34,8 +38,39 @@ function App() {
   const addMessage = (content) => {
     setAllMessages((prevMessages) => [
       ...prevMessages,
-      { sender: activeUser, content: content, time: '6:35' },
+      {
+        sender: activeUser,
+        content: content,
+        time: '6:35',
+        id: Date.now(),
+      },
     ]);
+  };
+
+  const deleteMessage = (sender, id) => {
+    if (sender === activeUser) {
+      setAllMessages((prevMessages) =>
+        prevMessages.filter((message) => message.id !== id)
+      );
+    }
+  };
+
+  const editMessage = (sender, id, content, time) => {
+    if (sender === activeUser) {
+      setAllMessages((prevMessages) =>
+        prevMessages.map((message) => {
+          if (message.id === id) {
+            return {
+              sender: sender,
+              id: id,
+              content: content,
+              time: time,
+            };
+          }
+          return message;
+        })
+      );
+    }
   };
 
   const toggleUser = () => {
@@ -57,6 +92,8 @@ function App() {
         addMessage={addMessage}
         activeUser={activeUser}
         messages={messages}
+        deleteMessage={deleteMessage}
+        editMessage={editMessage}
       />
     </div>
   );

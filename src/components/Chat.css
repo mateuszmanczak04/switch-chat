@@ -13,6 +13,9 @@
 .chat .messages {
   overflow-y: scroll;
   flex: 1;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .chat .messages::-webkit-scrollbar {

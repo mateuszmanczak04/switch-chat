@@ -16,6 +16,7 @@ const SendForm = ({ onSendMessage }) => {
         type='text'
         placeholder='send message...'
         value={content}
+        id='send-input'
         onChange={(e) => setContent(e.target.value)}
       />
       <button>{'>'}</button>
