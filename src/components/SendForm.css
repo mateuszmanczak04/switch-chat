@@ -1,0 +1,31 @@
+.send {
+  width: 100%;
+  background: #fff;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  margin-top: auto;
+  
+}
+
+.send input {
+  border: none;
+  outline: none;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem;
+  flex: 1;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.send button {
+  background: rgb(14, 124, 214);
+  border: none;
+  outline: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+}

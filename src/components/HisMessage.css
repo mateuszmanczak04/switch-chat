@@ -1,0 +1,31 @@
+img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.hisMessage {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.hisMessage .right {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  max-width: 240px;
+}
+
+.hisMessage .right .content {
+  background: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.hisMessage .right .time {
+  font-size: 12px;
+  margin-left: 8px;
+  color: #444;
+}
