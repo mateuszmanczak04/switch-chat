@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/switch-chat/static/css/main.14d43a04.css",
+    "main.js": "/switch-chat/static/js/main.60b4323f.js",
+    "index.html": "/switch-chat/index.html",
+    "main.14d43a04.css.map": "/switch-chat/static/css/main.14d43a04.css.map",
+    "main.60b4323f.js.map": "/switch-chat/static/js/main.60b4323f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14d43a04.css",
+    "static/js/main.60b4323f.js"
+  ]
+}
